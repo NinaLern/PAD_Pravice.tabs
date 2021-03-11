@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center">多多的最新消息</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+  <!-- List of Text Items -->
+  <ion-list>
+      <!-- *ngFor="let unit of units"  == for unit in units -->
+      <!-- *ngFor == for -->
+      <!-- let unit of units  ==  unit in units -->
+      <ion-item *ngFor="let u of units" (click)="unitSelected(u)">
+        <p>{{ u }}</p>
+      </ion-item>
+  </ion-list>
+</ion-content>
+
+
+
+<!--不常用到的部分-->
+<!-- <ion-footer></ion-footer> -->
