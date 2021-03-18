@@ -1,17 +1,17 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
-    </ion-title>
+      紀錄多多的一切 </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-list>
+    <ion-item *ngFor="let l of doMemo">
+      <ion-label>{{ l.name }}</ion-label>
+      <p>數量: {{l.counts}}</p><br>
+      <p>類型: {{l.type}}</p><br>
+      <p>最愛: {{l.fav}}</p>
+    </ion-item>
+  </ion-list>
 </ion-content>

@@ -7,6 +7,12 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
-  constructor() {}
+  doMemo = [
+    { name: '喜歡的玩具', counts: '5', type: '玩偶', fav: '橘子' },
+    { name: '最喜歡的食物', counts: '無限', type: '軟軟好吃的', fav: '雞肉罐罐' },
+    { name: '奴才', counts: '9', type: '家人', fav: '媽麻' },
+  ]
+
+  constructor() { }
 
 }
